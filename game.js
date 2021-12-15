@@ -73,8 +73,8 @@ function checkAnswer(currentLevel) {
     }
     else
        { 
+           startOver();
         playSound("wrong");
-        startOver();
         $("body").addClass("game-over");
         setTimeout(function () {
             $("body").removeClass("game-over");
