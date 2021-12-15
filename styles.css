@@ -24,6 +24,11 @@ body{
     text-decoration: none;
 
 }
+
+#how_to:hover{
+    border: solid 2px black;
+    
+}
 #how_to:active{
     border: solid 3px white;
     color: white;
