@@ -24,16 +24,10 @@ body{
     text-decoration: none;
 
 }
-#how_to:hover{
+#how_to:active{
     border: solid 3px white;
     color: white;
     background-color: black;
-
-}
-#how_to:active{
-    border: solid 3px black;
-    color: black;
-    background-color: white;
 
 }
 
