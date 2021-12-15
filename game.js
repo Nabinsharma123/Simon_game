@@ -68,7 +68,10 @@ function checkAnswer(currentLevel) {
     if (userClickedPattern[currentLevel] === gamePattern[currentLevel]) {
 
         if (userClickedPattern.length === gamePattern.length) {
+            start=0;
              setTimeout(function() {nextSequence();},500)   ;
+             setTimeout(function() {start=1;},500) ;
+
         }
     }
     else
