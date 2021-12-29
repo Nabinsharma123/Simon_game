@@ -35,6 +35,12 @@ body{
     background-color: black;
 
 }
+#highscore{
+    position: absolute;
+    left: 70PX;
+    color: white;
+
+}
 
 
 .red{
