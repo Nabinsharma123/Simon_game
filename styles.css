@@ -22,7 +22,6 @@ body{
     width: 250px;
     border: solid 3px black;
     text-decoration: none;
-
 }
 
 #how_to:hover{
@@ -82,5 +81,24 @@ background-color: #a0a0a0;
 .game-over {
     background-color: red;
     opacity: 0.8;
+  }
+
+  #click_here{
+      border: solid 4px black;
+      padding: 6px;
+    font-family: 'Press Start 2P', cursive;
+    height: 60px;
+    width: 170px;
+    font-size:2rem;
+   
+  }
+
+  #click_here:hover{
+    border: solid 2px black;
+  }
+  #click_here:active{
+    border: solid 3px white;
+    color: white;
+    background-color: black;
   }
   

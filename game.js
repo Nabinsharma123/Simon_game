@@ -16,6 +16,13 @@ $(document).on("keypress", function () {
 
 });
 
+$("#click_here").on("click", function () {
+    if (start === 0) {
+        setTimeout(function () { nextSequence(); }, 200);
+
+        setTimeout(function () { start = 1; }, 200);
+    }
+});
 
 $(".btn").on("click", function () {
 
@@ -84,8 +91,15 @@ function checkAnswer(currentLevel) {
         setTimeout(function () {
             $("body").removeClass("game-over");
         }, 200);
-        $("#title").html("Game Over, Press Any Key to Restart");
-
+        $("#title").html("Game Over, Press Any Key or click <button id='click_here' > here</button> to Restart");
+        
+        $("#click_here").on("click", function () {
+            if (start === 0) {
+                setTimeout(function () { nextSequence(); }, 200);
+        
+                setTimeout(function () { start = 1; }, 200);
+            }
+        });
     }
 }
 
