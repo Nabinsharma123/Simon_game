@@ -18,17 +18,11 @@ $(document).on("keypress", function () {
 
 
 $(".btn").on("click", function () {
-    
+
     var userChosenColour = $(this).attr("id");
     var color = $("#" + userChosenColour).css("background-color");
     $(".footer").css("color", color);
-    
-    if(start===0)
-    {
-        nextSequence();
-        setTimeout(function () { start = 1; }, 200);
-    }
-   else if (start === 1) {
+    if (start === 1) {
         playSound(userChosenColour);
         userClickedPattern.push(userChosenColour);
 
