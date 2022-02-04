@@ -135,8 +135,8 @@ background-color: #a0a0a0;
         border: solid 2px black;
         padding: 0px;
       height: 27px;
-      width: 80px;
-      font-size:0.9rem;
+      width: 90px;
+      font-size:1.2rem;
      
     }
     body{
@@ -159,7 +159,7 @@ background-color: #a0a0a0;
         height: 25px;
         width: 150px;
         font-size: 0.7rem;
-        right: -63px;
+        right: -60px;
         top:200px
     }
     .btn{
@@ -167,12 +167,14 @@ background-color: #a0a0a0;
         height: 120px;
         width: 120px;
         margin: 5px;
-        border: solid 4px black;
+        border: solid 3px black;
     } 
-    .btn:active{
-        border: solid 4px black;
+    .btn:hover{   
+        border: solid 3px black;
     }
-
+    .btn:active{
+        border: solid 5px black;
+    }
 
 }
 
