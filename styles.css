@@ -157,9 +157,9 @@ background-color: #a0a0a0;
         transform: rotate(-90deg);
         border: solid 2px black;
         height: 25px;
-        width: 150px;
+        width: 170px;
         font-size: 0.7rem;
-        right: -60px;
+        right: -70px;
         top:200px
     }
     .btn{
