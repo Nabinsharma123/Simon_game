@@ -3,7 +3,7 @@ body{
     text-align: center;
     font-family: 'Press Start 2P', cursive;
 }
-#title{
+.title{
     color:white;
 }
 .footer{
@@ -12,6 +12,8 @@ body{
 }
 .container{
     margin: auto;  
+
+
 }
 #how_to{
     position: absolute;
@@ -83,7 +85,7 @@ background-color: #a0a0a0;
     opacity: 0.8;
   }
 
-  #click_here{
+  .click_here{
       border: solid 4px black;
       padding: 6px;
     font-family: 'Press Start 2P', cursive;
@@ -93,12 +95,100 @@ background-color: #a0a0a0;
    
   }
 
-  #click_here:hover{
+  .click_here:hover{
     border: solid 2px black;
   }
-  #click_here:active{
+  .click_here:active{
     border: solid 3px white;
     color: white;
     background-color: black;
   }
-  
+  #large{
+      display: block;
+    }
+    #small{
+    display: none;
+}
+
+
+@media (min-width:512px) and (max-width:900px) {
+    #highscore{        
+        position: relative;
+       margin-right: 140px;
+    }
+    #how_to{
+        transform: rotate(-90deg);
+        right: -100px;
+        top:300px
+    }
+    #large{
+        display: none;
+    }
+    #small{
+        display: block;
+    }
+    
+}
+
+@media (max-width:511px){
+    .click_here{
+        border: solid 2px black;
+        padding: 0px;
+      height: 27px;
+      width: 80px;
+      font-size:0.9rem;
+     
+    }
+    body{
+        font-size: 0.7rem;
+    }
+    #large{
+        display: none;
+    }
+    #small{
+        display: block;
+    }
+    #highscore{        
+        position: relative;
+       margin-right: 140px;
+       font-size: 0.7rem;
+    }
+    #how_to{
+        transform: rotate(-90deg);
+        border: solid 2px black;
+        height: 25px;
+        width: 150px;
+        font-size: 0.7rem;
+        right: -63px;
+        top:200px
+    }
+    .btn{
+        font-size: 2rem;
+        height: 120px;
+        width: 120px;
+        margin: 5px;
+        border: solid 4px black;
+    } 
+    .btn:active{
+        border: solid 4px black;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

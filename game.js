@@ -16,7 +16,7 @@ $(document).on("keypress", function () {
 
 });
 
-$("#click_here").on("click", function () {
+$(".click_here").on("click", function () {
     if (start === 0) {
         setTimeout(function () { nextSequence(); }, 200);
 
@@ -48,7 +48,7 @@ function nextSequence() {
         HighScore = level;
         $("#highscore").html("High Score : " + HighScore);
     }
-    $("#title").html("level " + level);
+    $(".title").html("level " + level);
     var randomnumber = Math.floor(Math.random() * 4);
 
     var randomChosenColour = buttonColours[randomnumber];
@@ -91,15 +91,19 @@ function checkAnswer(currentLevel) {
         setTimeout(function () {
             $("body").removeClass("game-over");
         }, 200);
-        $("#title").html("Game Over, Press Any Key or click <button id='click_here' > here</button> to Restart");
-        
-        $("#click_here").on("click", function () {
-            if (start === 0) {
-                setTimeout(function () { nextSequence(); }, 200);
-        
-                setTimeout(function () { start = 1; }, 200);
-            }
-        });
+        if (screen.width > 900)
+            $(".title").html("Game Over, Press Any Key to Restart");
+        else {
+            $(".title").html("Click <button class='click_here' > here</button> To restart");
+
+            $(".click_here").on("click", function () {
+                if (start === 0) {
+                    setTimeout(function () { nextSequence(); }, 200);
+
+                    setTimeout(function () { start = 1; }, 200);
+                }
+            });
+        }
     }
 }
 
